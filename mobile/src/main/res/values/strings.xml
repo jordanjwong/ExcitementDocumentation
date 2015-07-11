@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PRG02_excitement_documentation</string>
+
+    <string name="hello_world">ARE YOU READY TO RUMBLE?</string>
+    <string name="action_settings">Settings</string>
+    <string name="cs160excited">#cs160excited</string>
+    <string name="Camera_Activity">CameraActivity</string>
+    <string name="Camera_Listener_Service">Camera Listener Service</string>
+    <string name="Fetch_Tweet_Service">Fetch Tweet Service</string>
+    <string name="View_Tweet_Activity">View Tweet Activity</string>
+</resources>

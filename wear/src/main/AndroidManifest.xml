@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.jordanwong.prg02_excitement_documentation" >
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name=".AccelService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        <service
+            android:name=".GoogleApiClientService"
+            android:exported="false" >
+        </service>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="fb109e7860e9e1052c1cf921d93c7a6027f2da2a" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>
